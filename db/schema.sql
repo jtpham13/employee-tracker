@@ -27,5 +27,3 @@ CREATE TABLE employees (
     FOREIGN KEY (manager_id) REFERENCES employees(id)
 );
 
-SELECT * FROM employees;
-DESCRIBE EE_db;
