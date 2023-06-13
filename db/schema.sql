@@ -28,3 +28,4 @@ CREATE TABLE employees (
 );
 
 SELECT * FROM employees;
+DESCRIBE EE_db;
