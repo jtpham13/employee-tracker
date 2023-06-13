@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS EE_db;
-CREATE DATABASE EE_db;
+DROP DATABASE IF EXISTS ee_db;
+CREATE DATABASE ee_db;
 
-USE EE_db;
+USE ee_db;
 
 
 CREATE TABLE departments (
@@ -27,3 +27,6 @@ CREATE TABLE employees (
     FOREIGN KEY (manager_id) REFERENCES employees(id)
 );
 
+SHOW DATABASES;
+USE EE_db;
+SHOW TABLES;

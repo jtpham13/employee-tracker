@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
-const connection = require("./config/connection");
 const mysql = require("mysql2");
+const connection = require('./config/connection');
+
 
 // displaying main menu
 function displayMainMenu() {
@@ -53,13 +54,18 @@ function displayMainMenu() {
 
 // Viewing all the departments
 function viewDepartments() {
-  const query = "SELECT * FROM department";
-  connection.query(query, (err, res) => {
-    if (err) throw err;
-    console.table(res);
-    displayMainMenu();
-  });
-}
+    const query = "SELECT * FROM department";
+    connection.promise().query(query)
+      .then(([rows, fields]) => {
+        console.table(rows);
+        displayMainMenu();
+      })
+      .catch((err) => {
+        console.error(err);
+        displayMainMenu();
+      });
+  }
+
 
 // Adding a new role
 function viewRoles() {
@@ -201,3 +207,5 @@ function updateEmployeeRole() {
       });
     });
 }
+
+displayMainMenu();
