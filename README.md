@@ -11,6 +11,16 @@ npm i inquirer@8.2.4
 
 npm i mysql2
 
+## Screenshot
+
+<img src="https://github.com/jtpham13/employee-tracker/blob/main/assets/employeetracker.png"/>
+
 ## Usage 
 
+[Click here for repo](https://github.com/jtpham13/employee-tracker)
 
+Link to google drive demo https://drive.google.com/file/d/1V4eWatKgb_I1VI8oThKHsa7_StvQxHPZ/view
+
+## License 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
