@@ -18,7 +18,7 @@ function displayMainMenu() {
         "Add a role",
         "Add an employee",
         "Update an employee role",
-        "exit",
+        "Exit",
       ],
     })
     .then((answers) => {
@@ -54,7 +54,7 @@ function displayMainMenu() {
 
 // Viewing all the departments
 function viewDepartments() {
-    const query = "SELECT * FROM department";
+    const query = "SELECT * FROM departments";
     connection.promise().query(query)
       .then(([rows, fields]) => {
         console.table(rows);
@@ -96,7 +96,7 @@ function addDepartment() {
       message: "Enter the name of the departments:",
     })
     .then((answers) => {
-      const query = "INSERT INTO department SET?";
+      const query = "INSERT INTO departments SET?";
       connection.query(query, { name: answers.name }, (err, res) => {
         if (err) throw err;
         console.log("Department added successfully!");
@@ -119,17 +119,17 @@ function addRole() {
         message: "Enter the salary for the role:",
       },
       {
-        name: "departmentID",
+        name: "departmentid",
         type: "input",
         message: "Enter the department ID for the role:",
       },
     ])
     .then((answers) => {
-      const { title, salary, departmentId } = answers;
+      const { title, salary, departmentid } = answers;
 
       const query =
         "INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)";
-      connection.query(query, [title, salary, departmentId], (err, res) => {
+      connection.query(query, [title, salary, departmentid], (err, res) => {
         if (err) throw err;
         console.log("Role added successfully!");
         displayMainMenu();

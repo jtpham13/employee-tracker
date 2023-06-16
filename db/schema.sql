@@ -27,6 +27,6 @@ CREATE TABLE employees (
     FOREIGN KEY (manager_id) REFERENCES employees(id)
 );
 
-SHOW DATABASES;
-USE EE_db;
-SHOW TABLES;
+/* SHOW DATABASES;
+USE ee_db;
+SHOW TABLES; */
