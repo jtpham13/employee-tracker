@@ -13,7 +13,7 @@ npm i mysql2
 
 ## Screenshot
 
-<img src="https://github.com/jtpham13/employee-tracker/blob/main/assets/employeetracker.png"/>
+<img src="https://github.com/jtpham13/employee-tracker/blob/main/assets/employeetracker2.png"/>
 
 ## Usage 
 
