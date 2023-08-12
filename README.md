@@ -19,7 +19,7 @@ npm i mysql2
 
 [Click here for repo](https://github.com/jtpham13/employee-tracker)
 
-Link to google drive demo https://drive.google.com/file/d/1V4eWatKgb_I1VI8oThKHsa7_StvQxHPZ/view
+Link to google drive demo https://drive.google.com/file/d/14u6pPY3XRAzPV2FdpiKubWM44QczS0q5/view
 
 ## License 
 
